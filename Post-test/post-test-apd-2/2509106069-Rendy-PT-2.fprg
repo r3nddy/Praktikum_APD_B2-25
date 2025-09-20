@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="APD-2"/>
+        <attribute name="authors" value="Rendy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-20 07:15:50 PM"/>
+        <attribute name="created" value="UmVuZHk7TEFQVE9QLUFKSk9KNVRROzIwMjUtMDktMjA7MDk6NDg6MDIgQU07Mjg3OQ=="/>
+        <attribute name="edited" value="UmVuZHk7TEFQVE9QLUFKSk9KNVRROzIwMjUtMDktMjA7MDc6MTU6NTAgUE07NDszMDAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="nim, harga" type="Integer" array="False" size=""/>
+            <declare name="pecelLele, mieAyam, nasiPadang" type="Real" array="False" size=""/>
+            <output expression="&quot;Nama : &quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;NIM : &quot;" newline="True"/>
+            <input variable="nim"/>
+            <output expression="&quot;Masukkan harga : &quot;" newline="True"/>
+            <input variable="harga"/>
+            <assign variable="pecelLele" expression="harga + (harga * 5/100)"/>
+            <assign variable="mieAyam" expression="harga + (harga * 8/100)"/>
+            <assign variable="nasiPadang" expression="harga + (harga * 10/100)"/>
+            <output expression="&quot;===Selamat Datang Di Warung makan ===&quot;" newline="True"/>
+            <output expression="&quot;No  Menu         Harga     Pajak  Total&quot;" newline="True"/>
+            <output expression="&quot;1. Pecel Lele     Rp&quot; &amp; harga &amp; &quot;   5%     Rp.&quot; &amp; pecelLele" newline="True"/>
+            <output expression="&quot;2. Mie Ayam     Rp&quot; &amp; harga &amp; &quot;   8%     Rp.&quot; &amp; mieAyam" newline="True"/>
+            <output expression="&quot;3. Nasi Padang     Rp&quot; &amp; harga &amp; &quot;   10%     Rp.&quot; &amp; nasiPadang" newline="True"/>
+            <output expression="nama &amp; &quot; dengan nim &quot; &amp; nim &amp; &quot; ingin membeli Pecel Lele maka ia harus membayar Rp.&quot; &amp; pecelLele &amp;&quot; (sudah termasuk pajak)&quot;" newline="True"/>
+            <output expression="nama &amp; &quot; dengan nim &quot; &amp; nim &amp; &quot; ingin membeli Mie Ayam maka ia harus membayar Rp.&quot; &amp; mieAyam &amp;&quot; (sudah termasuk pajak)&quot;" newline="True"/>
+            <output expression="nama &amp; &quot; dengan nim &quot; &amp; nim &amp; &quot; ingin membeli Nasi Padang maka ia harus membayar Rp.&quot; &amp; nasiPadang &amp;&quot; (sudah termasuk pajak)&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
